@@ -97,7 +97,6 @@
 }
 @media (min-width: 400px) {
   .header {
-    height: 710px;
     padding-top: 39px;
     padding-left: 126px;
   }
@@ -175,11 +174,13 @@
   }
   .header .headline {
     position: relative;
+    width: 1249px;
     height: 456px;
     padding-bottom: 77px;
   }
   .header .headline__info {
     position: relative;
+    padding: 0;
     z-index: 10;
   }
   .header .headline__title {

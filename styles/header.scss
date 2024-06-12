@@ -123,7 +123,7 @@
 
 @include for-medium {
   .header {
-    height: 710px;
+    // height: 710px;
     padding-top: 39px;
     padding-left: 126px;
 
@@ -215,11 +215,13 @@
 
     .headline {
       position: relative;
+      width: 1249px;
       height: 456px;
       padding-bottom: 77px;
 
       &__info {
         position: relative;
+        padding: 0;
         z-index: 10;
       }
 
