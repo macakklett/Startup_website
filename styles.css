@@ -175,7 +175,6 @@
   .header .headline {
     position: relative;
     width: 1249px;
-    height: 456px;
     padding-bottom: 77px;
   }
   .header .headline__info {
@@ -563,7 +562,7 @@
     width: 555px;
     height: 72px;
     margin: 0 auto;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
   .audience__buttons {
     flex-direction: row;
@@ -577,7 +576,8 @@
   }
   .audience .figures {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
   }
   .audience .figures__link {
     width: 262px;

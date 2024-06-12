@@ -124,7 +124,7 @@
       width: 555px;
       height: 72px;
       margin: 0 auto;
-      margin-bottom: 34px;
+      margin-bottom: 32px;
     }
 
     &__buttons {
@@ -141,7 +141,8 @@
 
     .figures {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 30px;
 
       &__link {
         width: 262px;
