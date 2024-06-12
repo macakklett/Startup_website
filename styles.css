@@ -590,17 +590,12 @@
 .order__icon {
   margin-bottom: 40px;
 }
-.order__icon img {
-  display: block;
-  margin: 0 auto;
-}
 .order__info_title {
   margin-bottom: 18px;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.25px;
-  text-align: center;
 }
 .order__info_text {
   margin-bottom: 40px;
