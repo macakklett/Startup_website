@@ -19,7 +19,7 @@
   border-left: 1px solid #000000;
 }
 .header .headline__info {
-  padding: 35px 15px 36px;
+  padding: 0 15px 36px;
 }
 .header .headline__title {
   margin-bottom: 24px;
@@ -589,8 +589,6 @@
 }
 .order__icon img {
   display: block;
-  width: 200px;
-  height: 220px;
   margin: 0 auto;
 }
 .order__info_title {
@@ -639,8 +637,6 @@
     margin-bottom: 0;
   }
   .order__icon img {
-    width: 269px;
-    height: 296px;
     margin: auto;
   }
   .order__info {
