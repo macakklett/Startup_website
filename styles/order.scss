@@ -56,12 +56,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 122px;
     height: 441px;
 
     &__icon {
       display: flex;
       margin-bottom: 0;
-      margin-right: 122px;
     }
 
     &__info {

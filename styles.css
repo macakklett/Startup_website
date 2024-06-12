@@ -629,12 +629,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 122px;
     height: 441px;
   }
   .order__icon {
     display: flex;
     margin-bottom: 0;
-    margin-right: 122px;
   }
   .order__info {
     width: 555px;
