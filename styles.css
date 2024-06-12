@@ -627,8 +627,9 @@
 @media (min-width: 400px) {
   .order {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 441px;
-    padding: 72px 0;
   }
   .order__icon {
     display: flex;
@@ -639,6 +640,7 @@
     margin: auto;
   }
   .order__info {
+    width: 555px;
     padding-top: 36px;
   }
   .order__info_title {
@@ -663,7 +665,7 @@
   }
 }
 .footer {
-  padding: 40px 0 22px;
+  padding: 42px 0 22px;
 }
 .footer a {
   color: #2b292d;
