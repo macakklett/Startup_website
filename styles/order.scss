@@ -54,18 +54,19 @@
 @include for-medium {
   .order {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 441px;
 
     &__icon {
       display: flex;
       margin-bottom: 0;
+      margin-right: 122px;
     }
 
     &__info {
       width: 555px;
-      padding-top: 36px;
+      padding-top: 46px;
 
       &_title {
         margin-bottom: 12px;

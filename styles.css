@@ -627,17 +627,18 @@
 @media (min-width: 400px) {
   .order {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 441px;
   }
   .order__icon {
     display: flex;
     margin-bottom: 0;
+    margin-right: 122px;
   }
   .order__info {
     width: 555px;
-    padding-top: 36px;
+    padding-top: 46px;
   }
   .order__info_title {
     margin-bottom: 12px;
