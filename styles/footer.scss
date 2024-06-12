@@ -21,7 +21,6 @@
     width: 100%;
     margin-top: 0;
     margin-bottom: 31px;
-    line-height: 125%;
 
     &__img {
       display: flex;
@@ -36,11 +35,14 @@
       margin-top: 20px;
       font-size: 20px;
       font-weight: 700;
+      line-height: 25px;
       text-align: center;
     }
 
     &__description {
       display: block;
+      font-style: 18px;
+      line-height: 25px;
       opacity: 0.6;
     }
   }
