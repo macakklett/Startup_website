@@ -1,0 +1,203 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+.footer {
+  padding: 40px 0 22px;
+
+  a {
+    color: $main-text-color;
+    opacity: 0.6;
+
+    &:hover {
+      color: #3141c5;
+      opacity: 1;
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 31px;
+    line-height: 125%;
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      margin-right: 0;
+    }
+
+    &__name {
+      display: block;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__description {
+      display: block;
+      opacity: 0.6;
+    }
+  }
+
+  &__top {
+    .foundation {
+      margin-bottom: 39px;
+
+      &__download-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 261px;
+        margin: 0 auto;
+      }
+
+      &__text {
+        display: none;
+      }
+    }
+
+    .additional-nav {
+      margin-bottom: 30px;
+      border-top: 1px solid rgba(43, 41, 45, 0.1);
+
+      &__block {
+        padding-top: 30px;
+        padding-left: 16px;
+      }
+
+      &__title {
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 127%;
+      }
+
+      &__list {
+        &_item {
+          padding-bottom: 5px;
+          font-size: 18px;
+          line-height: 167%;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    .legal-list {
+      display: flex;
+      justify-content: space-between;
+      width: 180px;
+      margin-bottom: 31px;
+      font-size: 14px;
+      line-height: 157%;
+    }
+
+    &_social-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 97px;
+    }
+
+    &_social-icon {
+      width: 21px;
+      height: 16px;
+      cursor: pointer;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@include for-medium {
+  .footer {
+    padding: 43px 0 0 130px;
+
+    .logo {
+      margin-bottom: 26px;
+      flex-direction: row;
+      line-height: 25px;
+
+      &__img {
+        margin-right: 5px;
+      }
+
+      &__name {
+        margin: 0 auto;
+        text-align: left;
+      }
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+      padding-bottom: 47px;
+      border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+
+      .foundation {
+        margin-bottom: 0;
+        margin-right: 126px;
+
+        &__text {
+          display: block;
+          width: 360px;
+          height: 85px;
+          margin-bottom: 25px;
+          font-size: 18px;
+          line-height: 26px;
+          opacity: 0.6;
+        }
+
+        &__download-icons {
+          margin-left: 0;
+        }
+      }
+
+      .additional-nav {
+        display: flex;
+        margin-bottom: 0;
+        border-top: none;
+
+        &__block {
+          padding-top: 17px;
+          padding-left: 0;
+        }
+
+        &__list {
+          width: 265px;
+          height: 185px;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding: 0 130px;
+
+      .legal-list {
+        display: flex;
+        justify-content: space-between;
+        width: 180px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 157%;
+      }
+
+      &_social-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 97px;
+      }
+    }
+  }
+}

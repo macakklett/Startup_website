@@ -1,0 +1,84 @@
+@import 'breakpoints.scss';
+
+.customers {
+  display: grid;
+  grid-template:
+    'nyt forbes apple'
+    'mashable wsj google';
+  width: 319px;
+  height: 184px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+
+  .nyt {
+    grid-area: nyt;
+    border-right: 1px solid #e3e3e3;
+  }
+
+  .forbes {
+    grid-area: forbes;
+    border-right: 1px solid #e3e3e3;
+  }
+
+  .apple {
+    grid-area: apple;
+  }
+
+  .mashable {
+    grid-area: mashable;
+    border-right: 1px solid #e3e3e3;
+  }
+
+  .wsj {
+    grid-area: wsj;
+    border-right: 1px solid #e3e3e3;
+  }
+
+  .google {
+    grid-area: google;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 93px;
+    border-bottom: 1px solid #e3e3e3;
+
+    &_img {
+      max-width: 100%;
+    }
+  }
+}
+
+@include for-medium {
+  .customers {
+    display: flex;
+    align-items: center;
+    width: 1140px;
+    height: 75px;
+    margin-bottom: 106px;
+
+    .nyt {
+      border-right: none;
+    }
+
+    .forbes {
+      border-right: none;
+    }
+
+    .mashable {
+      border-right: none;
+    }
+
+    .wsj {
+      border-right: none;
+    }
+
+    &__logo {
+      width: 190px;
+      border: none;
+    }
+  }
+}

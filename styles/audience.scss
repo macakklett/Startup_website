@@ -1,0 +1,152 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+.audience {
+  padding: 50px 15px;
+  background-color: rgba(0, 161, 198, 7%);
+  text-align: center;
+
+  &__func {
+    margin-bottom: 17px;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 700;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.35px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 108px;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    background-color: $button-color;
+    color: $white-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 13px;
+    cursor: pointer;
+
+    &_secondary {
+      background-color: $white-color;
+      color: $button-color;
+    }
+  }
+
+  .figures {
+    &__link {
+      width: 290px;
+      height: 300px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 22px 0 33px;
+      margin-bottom: 15px;
+      background-color: $white-color;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+
+      &:hover {
+        background-color: #3141c5;
+      }
+
+      &:hover .figures__item {
+        color: $white-color;
+      }
+    }
+
+    &__item {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+      color: $main-text-color;
+
+      img {
+        max-width: 100%;
+      }
+
+      &_img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 22px;
+      }
+
+      &_caption {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include for-medium {
+  .audience {
+    padding: 108px 0 110px;
+
+    &__func {
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      width: 555px;
+      height: 112px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+
+    &__text {
+      width: 555px;
+      height: 72px;
+      margin: 0 auto;
+      margin-bottom: 34px;
+    }
+
+    &__buttons {
+      flex-direction: row;
+      width: 328px;
+      height: 48px;
+      margin: 0 auto;
+      margin-bottom: 111px;
+    }
+
+    &__button {
+      width: 160px;
+    }
+
+    .figures {
+      display: flex;
+      justify-content: space-evenly;
+
+      &__link {
+        width: 262px;
+        height: 300px;
+      }
+    }
+  }
+}

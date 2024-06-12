@@ -1,0 +1,110 @@
+@import 'breakpoints.scss';
+
+.order {
+  background-color: #f4f5f7;
+  padding: 50px 15px;
+
+  &__icon {
+    margin-bottom: 40px;
+
+    img {
+      display: block;
+      width: 200px;
+      height: 220px;
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    &_title {
+      margin-bottom: 18px;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -0.25px;
+      text-align: center;
+    }
+
+    &_text {
+      margin-bottom: 40px;
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    .form {
+      &__input {
+        width: 298px;
+        height: 48px;
+        margin-bottom: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .button {
+        display: block;
+        width: 298px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &_offer {
+      font-size: 14px;
+      line-height: 22px;
+      opacity: 0.6;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include for-medium {
+  .order {
+    display: flex;
+    height: 441px;
+    padding: 72px 0;
+    margin-bottom: 300px;
+
+    &__icon {
+      display: flex;
+      width: 40%;
+      margin-bottom: 0;
+
+      img {
+        width: 269px;
+        height: 296px;
+        margin: auto;
+      }
+    }
+
+    &__info {
+      padding-top: 36px;
+
+      &_title {
+        margin-bottom: 12px;
+        text-align: left;
+      }
+
+      &_text {
+        margin-bottom: 26px;
+      }
+
+      .form {
+        display: flex;
+        margin-bottom: 10px;
+
+        &__input {
+          width: 385px;
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+
+        .button {
+          width: 160px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
