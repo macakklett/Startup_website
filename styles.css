@@ -19,19 +19,24 @@
   border-left: 1px solid #000000;
 }
 .header .headline__info {
-  padding: 0 15px 36px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
 }
 .header .headline__title {
   margin-bottom: 24px;
   font-size: 50px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 51px;
   letter-spacing: -0.31px;
 }
 .header .headline__text {
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 34px;
+}
+.header .headline__buttons {
+  margin-bottom: 33px;
 }
 .header .headline__buttons .button {
   display: flex;
@@ -175,6 +180,7 @@
   .header .headline {
     position: relative;
     width: 1249px;
+    height: 456px;
     padding-bottom: 77px;
   }
   .header .headline__info {
@@ -184,6 +190,7 @@
   }
   .header .headline__title {
     max-width: 754px;
+    height: 165px;
     margin-bottom: 34px;
     font-size: 80px;
     line-height: 78px;
@@ -191,6 +198,8 @@
   }
   .header .headline__text {
     max-width: 456px;
+    height: 102px;
+    margin-bottom: 58px;
     line-height: 34px;
   }
   .header .headline__buttons {
@@ -202,7 +211,7 @@
     max-width: 100%;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 8px;
   }
 }
 .about {
@@ -591,20 +600,28 @@
 .order__icon {
   margin-bottom: 40px;
 }
+.order__icon img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 220px;
+}
 .order__info_title {
   margin-bottom: 18px;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
+  text-align: center;
   letter-spacing: -0.25px;
 }
 .order__info_text {
+  height: 167px;
   margin-bottom: 40px;
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 22px;
+  line-height: 32px;
 }
 .order__info .form__input {
-  width: 298px;
+  width: 290px;
   height: 48px;
   margin-bottom: 12px;
   padding-left: 10px;
@@ -612,7 +629,7 @@
 }
 .order__info .form .button {
   display: block;
-  width: 298px;
+  width: 290px;
   margin-bottom: 10px;
 }
 .order__info_offer {
@@ -725,9 +742,10 @@
   margin-bottom: 18px;
   font-weight: 700;
   font-size: 22px;
-  line-height: 127%;
+  line-height: 28px;
 }
 .footer__top .additional-nav__list_item {
+  padding-bottom: 5px;
   font-size: 18px;
   line-height: 167%;
 }
