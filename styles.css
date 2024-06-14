@@ -210,8 +210,8 @@
   .header .headline__img {
     max-width: 100%;
     position: absolute;
-    bottom: 0;
-    right: 8px;
+    top: 8px;
+    right: 0;
   }
 }
 .about {
@@ -698,8 +698,6 @@
   margin-bottom: 28px;
 }
 .footer .logo__img {
-  display: flex;
-  justify-content: center;
   width: 60px;
   height: 60px;
   margin-right: 0;
