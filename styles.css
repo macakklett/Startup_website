@@ -24,6 +24,8 @@
   padding: 0 15px;
 }
 .header .headline__title {
+  width: 290px;
+  height: 205px;
   margin-bottom: 24px;
   font-size: 50px;
   font-weight: 700;
