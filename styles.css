@@ -18,6 +18,9 @@
   cursor: pointer;
   border-left: 1px solid #000000;
 }
+.header .headline {
+  height: 826px;
+}
 .header .headline__info {
   display: flex;
   flex-direction: column;
