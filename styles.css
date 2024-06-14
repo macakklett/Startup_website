@@ -714,8 +714,7 @@
   height: 60px;
 }
 .footer .logo__img img {
-  width: 60px;
-  height: 60px;
+  max-width: 100%;
 }
 .footer .logo__name {
   display: block;
