@@ -708,9 +708,11 @@
   margin-bottom: 28px;
 }
 .footer .logo__img {
+  margin-right: 0;
+}
+.footer .logo__img img {
   width: 60px;
   height: 60px;
-  margin-right: 0;
 }
 .footer .logo__name {
   display: block;
