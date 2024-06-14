@@ -195,7 +195,7 @@
     z-index: 10;
   }
   .header .headline__title {
-    max-width: 754px;
+    width: 754px;
     height: 165px;
     margin-bottom: 34px;
     font-size: 80px;
@@ -659,15 +659,19 @@
     display: flex;
     margin-bottom: 0;
   }
+  .order__icon img {
+    width: 269px;
+    height: 296px;
+  }
   .order__info {
     width: 555px;
-    padding-top: 46px;
   }
   .order__info_title {
     margin-bottom: 12px;
     text-align: left;
   }
   .order__info_text {
+    height: 64px;
     margin-bottom: 26px;
   }
   .order__info .form {
@@ -753,6 +757,9 @@
   font-size: 18px;
   line-height: 167%;
 }
+.footer__bottom {
+  padding-left: 16px;
+}
 .footer__bottom .legal-list {
   display: flex;
   justify-content: space-between;
@@ -770,9 +777,8 @@
   width: 21px;
   height: 16px;
   cursor: pointer;
-  opacity: 0.6;
 }
-.footer__bottom_social-icon:hover {
+.footer__bottom_social-icon a {
   opacity: 1;
 }
 

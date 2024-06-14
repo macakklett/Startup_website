@@ -88,6 +88,8 @@
   }
 
   &__bottom {
+    padding-left: 16px;
+
     .legal-list {
       display: flex;
       justify-content: space-between;
@@ -107,9 +109,8 @@
       width: 21px;
       height: 16px;
       cursor: pointer;
-      opacity: 0.6;
 
-      &:hover {
+      a {
         opacity: 1;
       }
     }

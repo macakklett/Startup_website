@@ -71,11 +71,15 @@
     &__icon {
       display: flex;
       margin-bottom: 0;
+
+      img {
+        width: 269px;
+        height: 296px;
+      }
     }
 
     &__info {
       width: 555px;
-      padding-top: 46px;
 
       &_title {
         margin-bottom: 12px;
@@ -83,6 +87,7 @@
       }
 
       &_text {
+        height: 64px;
         margin-bottom: 26px;
       }
 
