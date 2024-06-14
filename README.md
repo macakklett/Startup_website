@@ -1,7 +1,7 @@
 <h1>Project #1 Startup website</h1>
 
 
-[Site Link](https://github.com/macakklett/Startup_website)
+[Site Link](https://macakklett.github.io/Startup_website/)
 
 Layout supports mobile (up-to-400) and desktop (up-to-1400) versions
 
