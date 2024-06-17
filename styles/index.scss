@@ -39,26 +39,3 @@ a {
     max-width: 1400px;
   }
 }
-
-.button {
-  display: none;
-  width: 290px;
-  height: 48px;
-  padding: 0;
-  border: none;
-  background-color: $button-color;
-  color: $white-color;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 13px;
-  cursor: pointer;
-
-  &:hover {
-    color: #000000;
-  }
-
-  &_secondary {
-    background-color: $white-color;
-    color: $button-color;
-  }
-}
