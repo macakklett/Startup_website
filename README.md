@@ -1,4 +1,4 @@
-<h1>Project #1 Startup website</h1>
+<h1>Project: Startup website</h1>
 
 
 [Site Link](https://macakklett.github.io/Startup_website/)
