@@ -1,19 +1,18 @@
-<h1>Project #1 Startup website</h1>
+### Project: Startup website
 
 
-[Site Link](https://macakklett.github.io/Startup_website/)
+### [Site Link](https://macakklett.github.io/Startup_website/)
 
 Layout supports mobile (up-to-400) and desktop (up-to-1400) versions
 
-The tech stack is:
-<ul>
-  <li>HTML5</li>
-  <li>CSS3</li>
-  <li>Flexbox</li>
-  <li>Sass (Scss)</li>
-  <li>BEM methodology</li>
-</ul>
+### The tech stack is:
+
+- [HTML5](https://uk.wikipedia.org/wiki/HTML5)
+- [CSS3](https://uk.wikipedia.org/wiki/CSS)
+- [Flexbox](https://uk.wikipedia.org/wiki/Flexbox)
+- [Sass (Scss)](https://sass-lang.com/)
+- [BEM methodology](https://en.bem.info/)
 
 
-<p>Author</p>
-<p><strong>Vitalii Matsan</strong></p>
+
+### Vitalii Matsan
