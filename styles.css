@@ -16,7 +16,7 @@
   width: 57px;
   height: 64px;
   cursor: pointer;
-  border-left: 1px solid #000000;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
 }
 .header .headline {
   height: 826px;
@@ -118,7 +118,6 @@
   .header .menu {
     max-width: 1140px;
     height: 62px;
-    margin: 0 auto;
     padding: 0;
     margin-bottom: 76px;
     background-color: #f3c6bd;
@@ -290,6 +289,7 @@
 .customers .mashable {
   grid-area: mashable;
   border-right: 1px solid #e3e3e3;
+  fill: #000000;
 }
 .customers .wsj {
   grid-area: wsj;
@@ -354,6 +354,7 @@
   margin-bottom: 17px;
   color: #009b4d;
   font-size: 22px;
+  font-weight: 700;
 }
 .features__mobile_title {
   margin-bottom: 15px;
@@ -406,6 +407,7 @@
   .features__desktop_func {
     margin-bottom: 24px;
     font-size: 22px;
+    font-weight: 700;
     color: #009b4d;
   }
   .features__desktop_title {
@@ -443,7 +445,6 @@
   .features__desktop .block-offer__text {
     width: 459px;
     padding-bottom: 18px;
-    margin-bottom: 20px;
     border-bottom: 3px solid #3142c6;
     font-size: 18px;
     line-height: 26px;
@@ -452,7 +453,8 @@
     display: flex;
     align-items: center;
     width: 457px;
-    height: 50px;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(43, 41, 45, 0.15);
   }
   .features__desktop .block-offer__item_icon {
     width: 23px;
