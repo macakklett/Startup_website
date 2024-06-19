@@ -16,8 +16,8 @@
     }
   }
 
-  &__info {
-    &_title {
+  .info {
+    &__title {
       margin-bottom: 18px;
       font-size: 40px;
       font-weight: 700;
@@ -26,7 +26,7 @@
       letter-spacing: -0.25px;
     }
 
-    &_text {
+    &__text {
       height: 167px;
       margin-bottom: 40px;
       font-size: 22px;
@@ -49,7 +49,7 @@
       }
     }
 
-    &_offer {
+    &__offer {
       font-size: 14px;
       line-height: 22px;
       opacity: 0.6;
@@ -79,15 +79,15 @@
       }
     }
 
-    &__info {
+    .info {
       width: 555px;
 
-      &_title {
+      &__title {
         margin-bottom: 12px;
         text-align: left;
       }
 
-      &_text {
+      &__text {
         height: 64px;
         margin-bottom: 26px;
       }

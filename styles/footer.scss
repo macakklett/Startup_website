@@ -36,7 +36,6 @@
 
     &__name {
       display: block;
-      // margin-top: 20px;
       font-size: 20px;
       font-weight: 700;
       line-height: 25px;
@@ -84,7 +83,7 @@
       }
 
       &__list {
-        &_item {
+        &-item {
           padding-bottom: 5px;
           font-size: 18px;
           line-height: 167%;
@@ -105,19 +104,19 @@
       line-height: 157%;
     }
 
-    &_social-icons {
+    .social-icons {
       display: flex;
       justify-content: space-between;
       width: 97px;
-    }
 
-    &_social-icon {
-      width: 21px;
-      height: 16px;
-      cursor: pointer;
+      &__icon {
+        width: 21px;
+        height: 16px;
+        cursor: pointer;
 
-      a {
-        opacity: 1;
+        a {
+          opacity: 1;
+        }
       }
     }
   }
@@ -125,7 +124,7 @@
 
 @include for-medium {
   .footer {
-    padding: 43px 0 0 130px;
+    padding: 43px 0 0;
 
     .logo {
       margin-bottom: 26px;
@@ -147,41 +146,41 @@
       display: flex;
       align-items: center;
       padding-bottom: 47px;
+      padding-left: 130px;
       border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+    }
+    .foundation {
+      margin-bottom: 0;
+      margin-right: 126px;
 
-      .foundation {
-        margin-bottom: 0;
-        margin-right: 126px;
-
-        &__text {
-          display: block;
-          width: 360px;
-          height: 85px;
-          margin-bottom: 25px;
-          font-size: 18px;
-          line-height: 26px;
-          opacity: 0.6;
-        }
-
-        &__download-icons {
-          margin-left: 0;
-        }
+      &__text {
+        display: block;
+        width: 360px;
+        height: 85px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 26px;
+        opacity: 0.6;
       }
 
-      .additional-nav {
-        display: flex;
-        margin-bottom: 0;
-        border-top: none;
+      &__download-icons {
+        margin-left: 0;
+      }
+    }
 
-        &__block {
-          padding-top: 17px;
-          padding-left: 0;
-        }
+    .additional-nav {
+      display: flex;
+      margin-bottom: 0;
+      border-top: none;
 
-        &__list {
-          width: 265px;
-          height: 185px;
-        }
+      &__block {
+        padding-top: 17px;
+        padding-left: 0;
+      }
+
+      &__list {
+        width: 265px;
+        height: 185px;
       }
     }
 
@@ -190,7 +189,8 @@
       justify-content: space-between;
       align-items: center;
       height: 50px;
-      padding: 0 130px;
+      padding: 0;
+      padding-left: 130px;
 
       .legal-list {
         display: flex;
@@ -201,7 +201,7 @@
         line-height: 157%;
       }
 
-      &_social-icons {
+      .social-icons {
         display: flex;
         justify-content: space-between;
         width: 97px;

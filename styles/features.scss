@@ -2,170 +2,116 @@
 @import 'variables.scss';
 
 .features {
-  &__desktop {
-    display: none;
-  }
-
-  &__mobile {
-    margin-bottom: 10px;
-
-    &_section {
-      padding-left: 15px;
-      line-height: 34px;
-      border-bottom: 1px solid #e3e3e3;
-
-      &:last-child {
-        border: none;
-      }
-    }
-
-    &_title-func {
-      margin-top: 40px;
-      margin-bottom: 17px;
-      color: #009b4d;
-      font-size: 22px;
-      font-weight: 700;
-    }
-
-    &_title {
-      margin-bottom: 15px;
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 40px;
-      letter-spacing: -0.35px;
-    }
-
-    &_text {
-      margin-bottom: 30px;
-      font-size: 24px;
-    }
-
-    &_img {
-      margin-bottom: 19px;
-      img {
-        max-width: 100%;
-      }
-    }
-    &_subtitle {
-      margin-bottom: 40px;
-      font-size: 14px;
-      line-height: 22px;
-      text-align: center;
-      opacity: 0.6;
-    }
-  }
+  display: none;
 }
 
 @include for-medium {
   .features {
-    &__mobile {
-      display: none;
+    display: block;
+    position: relative;
+    margin-bottom: 103px;
+    padding-left: 125px;
+
+    &__icon {
+      position: absolute;
+      top: 258px;
+      left: 0;
+
+      img {
+        max-width: 100%;
+      }
     }
 
-    &__desktop {
-      display: block;
+    &__info {
       position: relative;
-      margin-bottom: 103px;
-      padding-left: 207px;
+      z-index: 10;
+      line-height: 34px;
+    }
 
-      &_icon {
-        position: absolute;
-        top: 258px;
-        left: 0;
+    &__subtitle {
+      margin-bottom: 24px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #009b4d;
+    }
 
-        img {
-          max-width: 100%;
-        }
-      }
+    &__title {
+      width: 462px;
+      height: 112px;
+      margin-bottom: 30px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+    }
 
-      &_info {
-        position: relative;
-        z-index: 10;
-        line-height: 34px;
-      }
+    &__text {
+      width: 461px;
+      height: 102px;
+      margin-bottom: 42px;
+      font-size: 24px;
+      font-weight: 400;
+    }
 
-      &_func {
-        margin-bottom: 24px;
-        font-size: 22px;
-        font-weight: 700;
-        color: #009b4d;
-      }
-
-      &_title {
-        width: 462px;
-        height: 112px;
-        margin-bottom: 30px;
-        font-size: 56px;
-        line-height: 56px;
-        letter-spacing: -0.5px;
-        font-weight: 700;
-      }
-
-      &_text {
-        width: 461px;
-        height: 102px;
-        margin-bottom: 42px;
-        font-size: 24px;
-        font-weight: 400;
-      }
-
-      .block-offer {
-        &__title {
+    .opportunities {
+      .item-hover {
+        .main-block {
           display: flex;
           align-items: center;
           height: 28px;
           margin-bottom: 8px;
+          cursor: pointer;
 
-          &_icon {
+          &__icon {
             width: 24px;
             height: 24px;
             margin-right: 15px;
           }
 
-          &_text {
+          &__title {
             font-size: 22px;
+            font-weight: 700;
             line-height: 28px;
             color: #3142c6;
           }
         }
 
-        &__text {
+        &__description {
           width: 459px;
           padding-bottom: 18px;
           border-bottom: 3px solid #3142c6;
           font-size: 18px;
           line-height: 26px;
         }
-
-        &__item {
-          display: flex;
-          align-items: center;
-          width: 457px;
-          padding: 22px 0;
-          border-bottom: 1px solid rgba(43, 41, 45, 0.15);
-
-          &_icon {
-            width: 23px;
-            height: 25px;
-            margin-right: 15px;
-          }
-
-          &_name {
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 26px;
-          }
-        }
       }
 
-      &_img {
-        position: absolute;
-        top: 0;
-        right: 0;
+      .item {
+        display: flex;
+        align-items: center;
+        width: 457px;
+        padding: 22px 0;
+        border-bottom: 1px solid rgba(43, 41, 45, 0.15);
 
-        img {
-          max-width: 100%;
+        &__icon {
+          width: 23px;
+          height: 25px;
+          margin-right: 15px;
         }
+
+        &__title {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 26px;
+        }
+      }
+    }
+    &__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      img {
+        max-width: 100%;
       }
     }
   }

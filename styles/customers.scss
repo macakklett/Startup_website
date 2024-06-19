@@ -2,42 +2,9 @@
 
 .customers {
   display: grid;
-  grid-template:
-    'nyt forbes apple'
-    'mashable wsj google';
-  width: 319px;
-  height: 184px;
-  margin: 0 auto;
-  margin-bottom: 8px;
-
-  .nyt {
-    grid-area: nyt;
-    border-right: 1px solid #e3e3e3;
-  }
-
-  .forbes {
-    grid-area: forbes;
-    border-right: 1px solid #e3e3e3;
-  }
-
-  .apple {
-    grid-area: apple;
-  }
-
-  .mashable {
-    grid-area: mashable;
-    border-right: 1px solid #e3e3e3;
-    fill: #000000;
-  }
-
-  .wsj {
-    grid-area: wsj;
-    border-right: 1px solid #e3e3e3;
-  }
-
-  .google {
-    grid-area: google;
-  }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-bottom: 8px;
 
   &__logo {
     display: flex;
@@ -46,40 +13,34 @@
     width: 106px;
     height: 93px;
     border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
 
-    &_img {
-      max-width: 100%;
+    &:nth-child(3n) {
+      border-right: none;
+    }
+
+    img {
+      max-width: 80%;
     }
   }
 }
 
 @include for-medium {
   .customers {
-    display: flex;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
     width: 1140px;
-    height: 75px;
+    padding-bottom: 0;
+    margin-left: 130px;
     margin-bottom: 106px;
 
-    .nyt {
-      border-right: none;
-    }
-
-    .forbes {
-      border-right: none;
-    }
-
-    .mashable {
-      border-right: none;
-    }
-
-    .wsj {
-      border-right: none;
-    }
-
     &__logo {
-      width: 190px;
       border: none;
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
