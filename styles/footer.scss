@@ -5,6 +5,10 @@
 .footer {
   padding: 40px 0 22px;
 
+  @include for-medium {
+    padding: 43px 0 0;
+  }
+
   a {
     color: $main-text-color;
     opacity: 0.6;
@@ -15,197 +19,134 @@
     }
   }
 
-  .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 32px;
-
-    &__img {
-      margin-right: 0;
-      margin-bottom: 20px;
-      width: 60px;
-      height: 60px;
-
-      img {
-        max-width: 100%;
-      }
-    }
-
-    &__name {
-      display: block;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 25px;
-      text-align: center;
-    }
-
-    &__description {
-      display: block;
-      font-size: 18px;
-      line-height: 25px;
-      opacity: 0.6;
-    }
-  }
-
   &__top {
-    .foundation {
-      margin-bottom: 39px;
-
-      &__download-icons {
-        display: flex;
-        justify-content: space-between;
-        width: 261px;
-        margin: 0 auto;
-      }
-
-      &__text {
-        display: none;
-      }
-    }
-
-    .additional-nav {
-      margin-bottom: 30px;
-      border-top: 1px solid rgba(43, 41, 45, 0.1);
-
-      &__block {
-        padding-top: 30px;
-        padding-left: 16px;
-      }
-
-      &__title {
-        margin-bottom: 18px;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 28px;
-      }
-
-      &__list {
-        &-item {
-          padding-bottom: 5px;
-          font-size: 18px;
-          line-height: 167%;
-        }
-      }
-    }
-  }
-
-  &__bottom {
-    padding-left: 16px;
-
-    .legal-list {
-      display: flex;
-      justify-content: space-between;
-      width: 180px;
-      margin-bottom: 31px;
-      font-size: 14px;
-      line-height: 157%;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: space-between;
-      width: 97px;
-
-      &__icon {
-        width: 21px;
-        height: 16px;
-        cursor: pointer;
-
-        a {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
-
-@include for-medium {
-  .footer {
-    padding: 43px 0 0;
-
-    .logo {
-      margin-bottom: 26px;
-      flex-direction: row;
-      line-height: 25px;
-
-      &__img {
-        margin-right: 5px;
-        margin-bottom: 0;
-      }
-
-      &__name {
-        margin: 0 auto;
-        text-align: left;
-      }
-    }
-
-    &__top {
+    @include for-medium {
       display: flex;
       align-items: center;
       padding-bottom: 47px;
       padding-left: 130px;
       border-bottom: 1px solid rgba(43, 41, 45, 0.1);
     }
-    .foundation {
-      margin-bottom: 0;
-      margin-right: 126px;
+  }
 
-      &__text {
-        display: block;
-        width: 360px;
-        height: 85px;
-        margin-bottom: 25px;
-        font-size: 18px;
-        line-height: 26px;
-        opacity: 0.6;
-      }
+  &__bottom {
+    padding-left: 16px;
 
-      &__download-icons {
-        margin-left: 0;
-      }
-    }
-
-    .additional-nav {
-      display: flex;
-      margin-bottom: 0;
-      border-top: none;
-
-      &__block {
-        padding-top: 17px;
-        padding-left: 0;
-      }
-
-      &__list {
-        width: 265px;
-        height: 185px;
-      }
-    }
-
-    &__bottom {
+    @include for-medium {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 50px;
       padding: 0;
       padding-left: 130px;
+    }
+  }
+}
 
-      .legal-list {
-        display: flex;
-        justify-content: space-between;
-        width: 180px;
-        margin-bottom: 0;
-        font-size: 14px;
-        line-height: 157%;
-      }
+.additional-info {
+  margin-bottom: 39px;
 
-      .social-icons {
-        display: flex;
-        justify-content: space-between;
-        width: 97px;
-      }
+  @include for-medium {
+    margin-bottom: 0;
+    margin-right: 126px;
+  }
+
+  &__text {
+    display: none;
+
+    @include for-medium {
+      display: block;
+      width: 360px;
+      height: 85px;
+      margin: 25px 0;
+      font-size: 18px;
+      line-height: 26px;
+      opacity: 0.6;
+    }
+  }
+
+  &__download-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 261px;
+    margin: 0 auto;
+
+    @include for-medium {
+      margin: 0;
+    }
+  }
+}
+
+.additional-nav {
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(43, 41, 45, 0.1);
+
+  @include for-medium {
+    display: flex;
+    margin-bottom: 0;
+    border-top: none;
+  }
+
+  &__block {
+    padding-top: 30px;
+    padding-left: 16px;
+
+    @include for-medium {
+      padding-top: 17px;
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  &__list {
+    @include for-medium {
+      width: 265px;
+      height: 185px;
+    }
+    &-item {
+      padding-bottom: 5px;
+      font-size: 18px;
+      line-height: 167%;
+    }
+  }
+}
+
+.legal-list {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 157%;
+
+  @include for-medium {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 157%;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 97px;
+
+  &__icon {
+    width: 21px;
+    height: 16px;
+    cursor: pointer;
+
+    a {
+      opacity: 1;
     }
   }
 }

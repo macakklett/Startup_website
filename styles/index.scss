@@ -1,3 +1,4 @@
+@import 'logo.scss';
 @import 'header.scss';
 @import 'about.scss';
 @import 'customers.scss';
@@ -33,10 +34,8 @@ a {
 .page {
   max-width: 320px;
   margin: 0 auto;
-}
 
-@include for-medium {
-  .page {
+  @include for-medium {
     max-width: 1400px;
   }
 }

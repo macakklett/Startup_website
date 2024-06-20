@@ -6,6 +6,16 @@
   grid-template-rows: repeat(2, 1fr);
   padding-bottom: 8px;
 
+  @include for-medium {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 1140px;
+    padding-bottom: 0;
+    margin-left: 130px;
+    margin-bottom: 106px;
+  }
+
   &__logo {
     display: flex;
     justify-content: center;
@@ -15,30 +25,18 @@
     border-bottom: 1px solid #e3e3e3;
     border-right: 1px solid #e3e3e3;
 
+    @include for-medium {
+      border: none;
+    }
+
     &:nth-child(3n) {
       border-right: none;
     }
 
     img {
       max-width: 80%;
-    }
-  }
-}
 
-@include for-medium {
-  .customers {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
-    width: 1140px;
-    padding-bottom: 0;
-    margin-left: 130px;
-    margin-bottom: 106px;
-
-    &__logo {
-      border: none;
-
-      img {
+      @include for-medium {
         max-width: 100%;
       }
     }
