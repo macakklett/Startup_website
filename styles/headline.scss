@@ -1,0 +1,86 @@
+.headline {
+  height: 826px;
+  padding-top: 35px;
+  background-color: #f3c6bd;
+
+  @include for-medium {
+    position: relative;
+    height: 533px;
+    padding: 0 0 77px 130px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    @include for-medium {
+      position: relative;
+      padding: 0;
+      z-index: 10;
+    }
+  }
+
+  &__title {
+    width: 290px;
+    height: 205px;
+    margin-bottom: 24px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.31px;
+
+    @include for-medium {
+      width: 754px;
+      height: 165px;
+      margin-bottom: 34px;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+
+    @include for-medium {
+      max-width: 456px;
+      height: 102px;
+      margin-bottom: 58px;
+      line-height: 34px;
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 33px;
+
+    @include for-medium {
+      display: flex;
+      justify-content: space-between;
+      max-width: 328px;
+    }
+
+    .action-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+
+    @include for-medium {
+      max-width: 100%;
+      position: absolute;
+      top: 8px;
+      right: 25px;
+    }
+  }
+}

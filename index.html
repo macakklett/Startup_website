@@ -16,42 +16,40 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class="menu">
-        <div class="logo">
-          <img src="./img/Icon-logo-header.svg" class="logo__img" alt="logo">
-          <div class="logo__text">
-            <span class="logo__name">Foundation</span>
-            <span class="logo__description">Startup landing template</span>
-          </div>
+      <div class="logo logo_header">
+        <img src="./img/Icon-logo-header.svg" class="logo__img" alt="logo">
+        <div class="logo__text">
+          <span class="logo__name">Foundation</span>
+          <span class="logo__description">Startup landing template</span>
         </div>
-        <nav class="navigation">
-          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png"
-            class="navigation__menu-icon" alt="burger menu for mobile desktop">
-          <ul class="nav-list">
-            <li class="nav-list__item nav-list__item_selected"><a href="#">Home</a></li>
-            <li class="nav-list__item"><a href="#">Stories</a></li>
-            <li class="nav-list__item"><a href="#">Library</a></li>
-          </ul>
-          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png"
-            class="navigation__arrow-popup" alt="arrow for popup">
-        </nav>
-        <button class="button" type="button">Get Started</button>
       </div>
-      <div class="headline">
+      <nav class="navigation">
+        <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png"
+          class="navigation__menu-icon" alt="burger menu for mobile desktop">
+        <ul class="nav-list">
+          <li class="nav-list__item nav-list__item_selected"><a href="#">Home</a></li>
+          <li class="nav-list__item"><a href="#">Stories</a></li>
+          <li class="nav-list__item"><a href="#">Library</a></li>
+        </ul>
+        <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png"
+          class="navigation__arrow-popup" alt="arrow for popup">
+      </nav>
+      <button class="action-button" type="button">Get Started</button>
+    </header>
+    <main>
+      <section class="headline">
         <div class="headline__info">
           <div class="headline__title">Build stunning websites &#38 apps.</div>
           <div class="headline__text">Create live segments and target the right people for messages based on their
             behaviors.</div>
           <div class="headline__buttons">
-            <button class="button" type="button">Get Started</button>
-            <button class="button button_secondary" type="">Learn More</button>
+            <button class="action-button" type="button">Get Started</button>
+            <button class="action-button action-button_secondary" type="">Learn More</button>
           </div>
         </div>
         <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
           class="headline__img" alt="picture">
-      </div>
-    </header>
-    <main>
+      </section>
       <section class="about">
         <article class="article">
           <h4 class="article__title">What is it about?</h4>
@@ -98,7 +96,7 @@
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-asquire-customer.png"
               alt="Asquire customer">
           </div>
-          <div class="tips__img-text">A better way to acquire new users</div>
+          <p class="tips__img-text">A better way to acquire new users</p>
         </div>
         <div class="tips__section">
           <div class="tips__subtitle">Engage Users</div>
@@ -110,7 +108,7 @@
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-engage-user.png"
               alt="Engage users">
           </div>
-          <div class="tips__img-text">Knowledge base and smart self-service</div>
+          <p class="tips__img-text">Knowledge base and smart self-service</p>
         </div>
         <div class="tips__section">
           <div class="tips__subtitle">Support</div>
@@ -121,7 +119,7 @@
             <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-support.png"
               alt="Support">
           </div>
-          <div class="tips__img-text">Live chat and messaging</div>
+          <p class="tips__img-text">Live chat and messaging</p>
         </div>
       </section>
       <section class="features">
@@ -171,8 +169,8 @@
         <div class="audience__text">Early stage company? Eligible applicants get all of our products for just $49 a
           month.</div>
         <div class="audience__buttons">
-          <div class="button audience__button">Get Started</div>
-          <div class="button audience__button audience__button_secondary">Learn More</div>
+          <div class="action-button audience__button">Get Started</div>
+          <div class="action-button audience__button audience__button_secondary">Learn More</div>
         </div>
         <div class="audience__gallery figures">
           <a class="figures__link" href="#">
@@ -216,7 +214,7 @@
           <div class="order-info__text">Get notified about company updates, news and blog posts. We hate spam.</div>
           <form class="order-info__form order-form">
             <input type="text" placeholder="Enter your email" class="order-form__input">
-            <button type="submit" class="button order-form__button">Get Started</button>
+            <button type="submit" class="action-button order-form__button">Get Started</button>
           </form>
           <div class="order-info__offer">Free 14-day trial · Easy setup · Cancel any time.
             <a href="#">Check out Termsof Use.</a>
@@ -227,7 +225,7 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="additional-info">
-          <div class="logo">
+          <div class="logo logo_footer">
             <img class="logo__img"
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
               alt="logo">

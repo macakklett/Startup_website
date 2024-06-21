@@ -2,198 +2,80 @@
 @import 'breakpoints.scss';
 
 .header {
-  height: 890px;
-  background-color: #f3c6bd;
+  display: flex;
+  height: 64px;
+  background-color: $white-color;
   color: $main-text-color;
 
   @include for-medium {
-    height: 710px;
-    padding-top: 39px;
-    padding-left: 126px;
+    height: 177px;
+    padding: 39px 130px 76px;
+    background-color: #f3c6bd;
 
-    .button {
+    .action-button {
       display: block;
       width: 160px;
     }
   }
 }
-.menu {
+
+.navigation {
   display: flex;
-  padding-left: 15px;
-  background-color: $white-color;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  height: 64px;
+  cursor: pointer;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
 
   @include for-medium {
-    max-width: 1140px;
-    height: 62px;
-    padding: 0;
-    margin-bottom: 76px;
-    background-color: #f3c6bd;
+    display: block;
+    width: 323px;
+    height: 100%;
+    margin-left: auto;
+    position: relative;
+    border: none;
   }
 
-  .navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 57px;
-    height: 64px;
-    cursor: pointer;
-    border-left: 1px solid rgba(0, 0, 0, 0.15);
-
-    @include for-extra-small {
-      .nav-list {
-        display: none;
-      }
-
-      &__arrow-popup {
-        display: none;
-      }
-
-      &:hover .nav-list {
-        display: block;
-        position: absolute;
-        top: 64px;
-        right: 0;
-        width: 170px;
-        background-color: #332e2e;
-
-        &__item a {
-          display: inline-block;
-          width: 100%;
-          height: 60px;
-          line-height: 60px;
-          color: $white-color;
-          padding-left: 20px;
-
-          &:hover {
-            color: green;
-          }
-        }
-      }
+  &__menu-icon {
+    @include for-medium {
+      display: none;
     }
+  }
+
+  &__arrow-popup {
+    display: none;
 
     @include for-medium {
       display: block;
-      width: 323px;
-      height: 100%;
-      margin-left: auto;
-      position: relative;
-      border: none;
-
-      &__menu-icon {
-        display: none;
-      }
-
-      .nav-list {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 7px;
-        font-size: 18px;
-        line-height: 25px;
-        margin-right: 75px;
-
-        &__item a {
-          color: $main-text-color;
-        }
-
-        &__item_selected {
-          font-weight: 700;
-        }
-      }
-
-      &__arrow-popup {
-        display: block;
-        position: absolute;
-        right: 56px;
-        top: 19px;
-      }
+      position: absolute;
+      right: 56px;
+      top: 19px;
     }
   }
 }
 
-.headline {
-  height: 826px;
+.nav-list {
+  display: none;
 
   @include for-medium {
-    position: relative;
-    width: 1245px;
-    height: 456px;
-    padding-bottom: 77px;
-  }
-
-  &__info {
     display: flex;
-    flex-direction: column;
-    margin-top: 35px;
-    padding: 0 15px;
+    justify-content: space-between;
+    margin-top: 7px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 75px;
+  }
 
+  &__item a {
     @include for-medium {
-      position: relative;
-      padding: 0;
-      z-index: 10;
+      color: $main-text-color;
     }
   }
 
-  &__title {
-    width: 290px;
-    height: 205px;
-    margin-bottom: 24px;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 51px;
-    letter-spacing: -0.31px;
-
+  &__item_selected {
     @include for-medium {
-      width: 754px;
-      height: 165px;
-      margin-bottom: 34px;
-      font-size: 80px;
-      line-height: 78px;
-      letter-spacing: -0.5px;
-    }
-  }
-
-  &__text {
-    margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 34px;
-
-    @include for-medium {
-      max-width: 456px;
-      height: 102px;
-      margin-bottom: 58px;
-      line-height: 34px;
-    }
-  }
-
-  &__buttons {
-    margin-bottom: 33px;
-
-    @include for-medium {
-      display: flex;
-      justify-content: space-between;
-      max-width: 328px;
-    }
-
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:first-child {
-        margin-bottom: 15px;
-      }
-    }
-  }
-
-  &__img {
-    max-width: 100%;
-
-    @include for-medium {
-      max-width: 100%;
-      position: absolute;
-      top: 8px;
-      right: 0;
+      font-weight: 700;
     }
   }
 }
