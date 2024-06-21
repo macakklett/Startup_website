@@ -22,8 +22,8 @@
     align-items: center;
     width: 106px;
     height: 93px;
-    border-bottom: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    border-right: 1px solid rgb(227, 227, 227);
 
     @include for-medium {
       border: none;

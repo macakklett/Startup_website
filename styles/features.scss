@@ -31,7 +31,7 @@
     margin-bottom: 24px;
     font-size: 22px;
     font-weight: 700;
-    color: #009b4d;
+    color: rgb(0, 155, 77);
   }
 
   &__title {
@@ -97,9 +97,9 @@
 }
 
 .opportunities-item_hover {
-  border-bottom: 3px solid #3142c6;
+  border-bottom: 3px solid rgb(49, 66, 198);
 
   .item__title {
-    color: #3142c6;
+    color: rgb(49, 66, 198);
   }
 }

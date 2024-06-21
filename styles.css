@@ -91,32 +91,32 @@
   height: 48px;
   padding: 0;
   border: none;
-  background-color: #3040c4;
-  color: #ffffff;
+  background-color: rgb(48, 64, 196);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 700;
   line-height: 13px;
   cursor: pointer;
 }
 .action-button:hover {
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 .action-button_secondary {
-  background-color: #ffffff;
-  color: #3040c4;
+  background-color: rgb(255, 255, 255);
+  color: rgb(48, 64, 196);
 }
 
 .header {
   display: flex;
   height: 64px;
-  background-color: #ffffff;
-  color: #2b292d;
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 41, 45);
 }
 @media (min-width: 400px) {
   .header {
     height: 177px;
     padding: 39px 130px 76px;
-    background-color: #f3c6bd;
+    background-color: rgb(243, 198, 189);
   }
   .header .action-button {
     display: block;
@@ -175,7 +175,7 @@
 }
 @media (min-width: 400px) {
   .nav-list__item a {
-    color: #2b292d;
+    color: rgb(43, 41, 45);
   }
 }
 @media (min-width: 400px) {
@@ -187,7 +187,7 @@
 .headline {
   height: 826px;
   padding-top: 35px;
-  background-color: #f3c6bd;
+  background-color: rgb(243, 198, 189);
 }
 @media (min-width: 400px) {
   .headline {
@@ -343,8 +343,8 @@
   align-items: center;
   width: 106px;
   height: 93px;
-  border-bottom: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  border-right: 1px solid rgb(227, 227, 227);
 }
 @media (min-width: 400px) {
   .customers__logo {
@@ -375,7 +375,7 @@
 .tips__section {
   padding-left: 15px;
   line-height: 34px;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid rgb(227, 227, 227);
 }
 .tips__section:last-child {
   border: none;
@@ -383,7 +383,7 @@
 .tips__subtitle {
   margin-top: 40px;
   margin-bottom: 17px;
-  color: #009b4d;
+  color: rgb(0, 155, 77);
   font-size: 22px;
   font-weight: 700;
 }
@@ -440,7 +440,7 @@
   margin-bottom: 24px;
   font-size: 22px;
   font-weight: 700;
-  color: #009b4d;
+  color: rgb(0, 155, 77);
 }
 .features__title {
   width: 462px;
@@ -496,10 +496,10 @@
 }
 
 .opportunities-item_hover {
-  border-bottom: 3px solid #3142c6;
+  border-bottom: 3px solid rgb(49, 66, 198);
 }
 .opportunities-item_hover .item__title {
-  color: #3142c6;
+  color: rgb(49, 66, 198);
 }
 
 .audience {
@@ -596,7 +596,7 @@
   height: 100%;
   padding: 22px 0 33px;
   margin-bottom: 15px;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
 }
 @media (min-width: 400px) {
@@ -606,17 +606,17 @@
   }
 }
 .figures__link:hover {
-  background-color: #3141c5;
+  background-color: rgb(49, 65, 197);
 }
 .figures__link:hover .figures__item {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 .figures__item {
   margin: 0;
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
-  color: #2b292d;
+  color: rgb(43, 41, 45);
 }
 .figures__item img {
   max-width: 100%;
@@ -631,7 +631,7 @@
 }
 
 .order {
-  background-color: #f4f5f7;
+  background-color: rgb(244, 245, 247);
   padding: 50px 15px;
 }
 @media (min-width: 400px) {
@@ -746,11 +746,11 @@
   }
 }
 .footer a {
-  color: #2b292d;
+  color: rgb(43, 41, 45);
   opacity: 0.6;
 }
 .footer a:hover {
-  color: #3141c5;
+  color: rgb(49, 65, 197);
   opacity: 1;
 }
 @media (min-width: 400px) {
@@ -889,7 +889,7 @@
 
 html {
   font-family: "Work Sans", sans-serif;
-  color: #2b292d;
+  color: rgb(43, 41, 45);
 }
 
 ul,
@@ -904,7 +904,6 @@ a {
 }
 
 .page {
-  padding-top: 800px;
   max-width: 320px;
   margin: 0 auto;
 }
