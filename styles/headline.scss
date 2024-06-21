@@ -1,18 +1,22 @@
-.headline {
-  height: 826px;
-  padding-top: 35px;
+.headline-wrapper {
   background-color: rgb(243, 198, 189);
 
   @include for-medium {
+    padding: 0 15px 77px 130px;
+  }
+}
+
+.headline {
+  height: 826px;
+
+  @include for-medium {
     position: relative;
-    height: 533px;
-    padding: 0 0 77px 130px;
+    height: 456px;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
 
     @include for-medium {
       position: relative;
@@ -80,7 +84,7 @@
       max-width: 100%;
       position: absolute;
       top: 8px;
-      right: 25px;
+      right: 0;
     }
   }
 }

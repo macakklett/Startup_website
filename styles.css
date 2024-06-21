@@ -109,6 +109,7 @@
 .header {
   display: flex;
   height: 64px;
+  padding-left: 15px;
   background-color: rgb(255, 255, 255);
   color: rgb(43, 41, 45);
 }
@@ -184,22 +185,27 @@
   }
 }
 
+.headline-wrapper {
+  background-color: rgb(243, 198, 189);
+}
+@media (min-width: 400px) {
+  .headline-wrapper {
+    padding: 0 15px 77px 130px;
+  }
+}
+
 .headline {
   height: 826px;
-  padding-top: 35px;
-  background-color: rgb(243, 198, 189);
 }
 @media (min-width: 400px) {
   .headline {
     position: relative;
-    height: 533px;
-    padding: 0 0 77px 130px;
+    height: 456px;
   }
 }
 .headline__info {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
 }
 @media (min-width: 400px) {
   .headline__info {
@@ -266,7 +272,7 @@
     max-width: 100%;
     position: absolute;
     top: 8px;
-    right: 25px;
+    right: 0;
   }
 }
 
