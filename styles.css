@@ -206,7 +206,7 @@
 .headline__info {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
+  padding: 0 15px;
 }
 @media (min-width: 400px) {
   .headline__info {
