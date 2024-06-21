@@ -190,7 +190,7 @@
 }
 @media (min-width: 400px) {
   .headline-wrapper {
-    padding: 0 15px 77px 130px;
+    padding: 0 25px 77px 130px;
   }
 }
 
@@ -206,6 +206,7 @@
 .headline__info {
   display: flex;
   flex-direction: column;
+  padding-left: 15px;
 }
 @media (min-width: 400px) {
   .headline__info {

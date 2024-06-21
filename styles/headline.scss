@@ -2,7 +2,7 @@
   background-color: rgb(243, 198, 189);
 
   @include for-medium {
-    padding: 0 15px 77px 130px;
+    padding: 0 25px 77px 130px;
   }
 }
 
@@ -17,6 +17,7 @@
   &__info {
     display: flex;
     flex-direction: column;
+    padding-left: 15px;
 
     @include for-medium {
       position: relative;
