@@ -4,7 +4,7 @@
 .footer {
   padding: 40px 0 22px;
 
-  @include for-medium {
+  @include for-large {
     padding: 43px 0 0;
   }
 
@@ -19,7 +19,7 @@
   }
 
   &__top {
-    @include for-medium {
+    @include for-large {
       display: flex;
       align-items: center;
       padding-bottom: 47px;
@@ -31,7 +31,7 @@
   &__bottom {
     padding-left: 16px;
 
-    @include for-medium {
+    @include for-large {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -45,7 +45,7 @@
 .additional-info {
   margin-bottom: 39px;
 
-  @include for-medium {
+  @include for-large {
     margin-bottom: 0;
     margin-right: 126px;
   }
@@ -53,7 +53,7 @@
   &__text {
     display: none;
 
-    @include for-medium {
+    @include for-large {
       display: block;
       width: 360px;
       height: 85px;
@@ -70,7 +70,7 @@
     width: 261px;
     margin: 0 auto;
 
-    @include for-medium {
+    @include for-large {
       margin: 0;
     }
   }
@@ -80,7 +80,7 @@
   margin-bottom: 30px;
   border-top: 1px solid rgba(43, 41, 45, 0.1);
 
-  @include for-medium {
+  @include for-large {
     display: flex;
     margin-bottom: 0;
     border-top: none;
@@ -90,7 +90,7 @@
     padding-top: 30px;
     padding-left: 16px;
 
-    @include for-medium {
+    @include for-large {
       padding-top: 17px;
       padding-left: 0;
     }
@@ -104,7 +104,7 @@
   }
 
   &__list {
-    @include for-medium {
+    @include for-large {
       width: 265px;
       height: 185px;
     }
@@ -125,7 +125,7 @@
   font-size: 14px;
   line-height: 157%;
 
-  @include for-medium {
+  @include for-large {
     display: flex;
     justify-content: space-between;
     width: 180px;

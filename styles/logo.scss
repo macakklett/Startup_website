@@ -4,7 +4,7 @@
   align-items: center;
   width: 261px;
 
-  @include for-medium {
+  @include for-large {
     width: 299px;
   }
 
@@ -13,7 +13,7 @@
     height: 48px;
     margin-right: 13px;
 
-    @include for-medium {
+    @include for-large {
       width: 60px;
       height: 60px;
       margin-right: 15px;
@@ -21,7 +21,7 @@
   }
 
   &__text {
-    @include for-medium {
+    @include for-large {
       display: flex;
       flex-direction: column;
       line-height: 25px;
@@ -38,7 +38,7 @@
   &__description {
     display: none;
 
-    @include for-medium {
+    @include for-large {
       display: block;
       font-size: 18px;
       opacity: 0.6;
@@ -53,14 +53,14 @@
   width: 320px;
   margin-bottom: 32px;
 
-  @include for-medium {
+  @include for-large {
     flex-direction: row;
   }
 
   &__img {
     margin-bottom: 20px;
 
-    @include for-medium {
+    @include for-large {
       margin-bottom: 0;
       margin-right: 15px;
     }
@@ -70,7 +70,7 @@
     text-align: center;
     line-height: 25px;
 
-    @include for-medium {
+    @include for-large {
       text-align: left;
     }
   }

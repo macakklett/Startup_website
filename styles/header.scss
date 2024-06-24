@@ -8,15 +8,10 @@
   background-color: $white-color;
   color: $main-text-color;
 
-  @include for-medium {
+  @include for-large {
     height: 177px;
     padding: 39px 130px 76px;
     background-color: rgb(243, 198, 189);
-
-    .action-button {
-      display: block;
-      width: 160px;
-    }
   }
 }
 
@@ -29,7 +24,7 @@
   cursor: pointer;
   border-left: 1px solid rgba(0, 0, 0, 0.15);
 
-  @include for-medium {
+  @include for-large {
     display: block;
     width: 323px;
     height: 100%;
@@ -39,7 +34,7 @@
   }
 
   &__menu-icon {
-    @include for-medium {
+    @include for-large {
       display: none;
     }
   }
@@ -47,7 +42,7 @@
   &__arrow-popup {
     display: none;
 
-    @include for-medium {
+    @include for-large {
       display: block;
       position: absolute;
       right: 56px;
@@ -59,23 +54,21 @@
 .nav-list {
   display: none;
 
-  @include for-medium {
+  @include for-large {
     display: flex;
     justify-content: space-between;
     margin-top: 7px;
+    margin-right: 75px;
     font-size: 18px;
     line-height: 25px;
-    margin-right: 75px;
   }
 
-  &__item a {
-    @include for-medium {
-      color: $main-text-color;
-    }
+  a {
+    color: $main-text-color;
   }
 
   &__item_selected {
-    @include for-medium {
+    @include for-large {
       font-weight: 700;
     }
   }

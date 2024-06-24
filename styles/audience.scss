@@ -6,7 +6,7 @@
   background-color: rgba(0, 161, 198, 7%);
   text-align: center;
 
-  @include for-medium {
+  @include for-large {
     padding: 108px 0 110px;
   }
 
@@ -16,7 +16,7 @@
     line-height: 34px;
     font-weight: 700;
 
-    @include for-medium {
+    @include for-large {
       margin-bottom: 24px;
     }
   }
@@ -28,7 +28,7 @@
     line-height: 40px;
     letter-spacing: -0.35px;
 
-    @include for-medium {
+    @include for-large {
       width: 555px;
       height: 112px;
       margin: 0 auto;
@@ -44,7 +44,7 @@
     font-size: 24px;
     line-height: 34px;
 
-    @include for-medium {
+    @include for-large {
       width: 555px;
       height: 72px;
       margin: 0 auto;
@@ -59,7 +59,7 @@
     height: 108px;
     margin-bottom: 40px;
 
-    @include for-medium {
+    @include for-large {
       flex-direction: row;
       width: 328px;
       height: 48px;
@@ -67,20 +67,10 @@
       margin-bottom: 111px;
     }
   }
-
-  .action-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include for-medium {
-      width: 160px;
-    }
-  }
 }
 
 .figures {
-  @include for-medium {
+  @include for-large {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -98,7 +88,7 @@
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1),
       inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
 
-    @include for-medium {
+    @include for-large {
       width: 262px;
       height: 300px;
     }

@@ -4,7 +4,7 @@
 .features {
   display: none;
 
-  @include for-medium {
+  @include for-large {
     display: block;
     position: relative;
     margin-bottom: 103px;
@@ -67,6 +67,14 @@
   &__item {
     width: 457px;
     border-bottom: 1px solid rgba(43, 41, 45, 0.15);
+
+    &_hover {
+      border-bottom: 3px solid rgb(49, 66, 198);
+
+      .opportunities-item__title {
+        color: rgb(49, 66, 198);
+      }
+    }
   }
 }
 
@@ -93,13 +101,5 @@
     padding-bottom: 18px;
     font-size: 18px;
     line-height: 26px;
-  }
-}
-
-.opportunities-item_hover {
-  border-bottom: 3px solid rgb(49, 66, 198);
-
-  .item__title {
-    color: rgb(49, 66, 198);
   }
 }

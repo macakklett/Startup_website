@@ -1,7 +1,7 @@
 .headline-wrapper {
   background-color: rgb(243, 198, 189);
 
-  @include for-medium {
+  @include for-large {
     padding: 0 25px 77px 130px;
   }
 }
@@ -9,7 +9,7 @@
 .headline {
   height: 826px;
 
-  @include for-medium {
+  @include for-large {
     position: relative;
     height: 456px;
   }
@@ -19,7 +19,7 @@
     flex-direction: column;
     padding: 0 15px;
 
-    @include for-medium {
+    @include for-large {
       position: relative;
       padding: 0;
       z-index: 10;
@@ -35,7 +35,7 @@
     line-height: 51px;
     letter-spacing: -0.31px;
 
-    @include for-medium {
+    @include for-large {
       width: 754px;
       height: 165px;
       margin-bottom: 34px;
@@ -50,7 +50,7 @@
     font-size: 24px;
     line-height: 34px;
 
-    @include for-medium {
+    @include for-large {
       max-width: 456px;
       height: 102px;
       margin-bottom: 58px;
@@ -61,27 +61,17 @@
   &__buttons {
     margin-bottom: 33px;
 
-    @include for-medium {
+    @include for-large {
       display: flex;
       justify-content: space-between;
       max-width: 328px;
-    }
-
-    .action-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:first-child {
-        margin-bottom: 15px;
-      }
     }
   }
 
   &__img {
     max-width: 100%;
 
-    @include for-medium {
+    @include for-large {
       max-width: 100%;
       position: absolute;
       top: 8px;

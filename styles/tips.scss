@@ -5,7 +5,7 @@
   display: block;
   margin-bottom: 10px;
 
-  @include for-medium {
+  @include for-large {
     display: none;
   }
 

@@ -36,7 +36,7 @@ a {
   max-width: 320px;
   margin: 0 auto;
 
-  @include for-medium {
+  @include for-large {
     max-width: 1400px;
   }
 }
