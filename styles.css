@@ -198,22 +198,15 @@
   }
 }
 
-.headline-wrapper {
-  background-color: rgb(243, 198, 189);
-}
-@media (min-width: 1400px) {
-  .headline-wrapper {
-    padding: 0 25px 77px 130px;
-  }
-}
-
 .headline {
   height: 826px;
+  background-color: rgb(243, 198, 189);
 }
 @media (min-width: 1400px) {
   .headline {
     position: relative;
     height: 456px;
+    padding: 0 25px 77px 130px;
   }
 }
 .headline__info {
